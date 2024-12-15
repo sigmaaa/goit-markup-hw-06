@@ -56,6 +56,10 @@ section {
     display: flex;
     align-items: center;
 }
+.header-close-btn {
+      display: none;  
+}
+
 .header-logo {
     font-family: "Raleway", sans-serif;
     font-weight: 700;
@@ -143,7 +147,7 @@ section {
 }
 
 .headline {
-    background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office.jpg);
+    background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/bg-mob@1x.jpg);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -548,7 +552,263 @@ section {
 }
 
 
+/* MEDIA */
 
+@media screen and (min-width: 320px) and (min-resolution: 192dpi) {
+    .headline {
+        background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/bg-mob@2x.jpg);
+    }
+}
+@media screen and (min-width: 768px) and (min-resolution: 192dpi) {
+    .headline {
+        background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/bg-tab@2x.jpg);
+    }
+}
+@media screen and (min-width: 1158px) and (min-resolution: 192dpi) {
+    .headline {
+        background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/bg-desk@2x.jpg);
+    }
+}
+
+
+@media screen and (min-width: 320px) {
+    .container {
+        max-width: 320px;
+        margin: 0 auto;
+        padding: 0 16px;
+    }
+
+    .header-close-btn {
+        position: absolute;
+        right: 24px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 34px;
+        height: 24px;
+        border-radius: 50%;
+        border: none;
+        background-color: transparent;
+    }
+
+    .header-nav {
+       padding: 16px 0;
+    }
+    .header-nav-list {
+        display: none;
+    }
+    .header-address {
+        display: none;
+    }
+    .headline {
+        max-width: 320px;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        margin: 0 auto;
+        padding: 72px 0;
+        background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/bg-mob@1x.jpg);
+    }
+
+    .headline-button {
+        margin-top: 72px;
+    }
+
+    .headline-title {
+        font-size: 36px;
+        max-width: 216px;
+    }
+    .benefits-list {
+        flex-direction: column;
+        gap: 72px;
+    }
+
+    .benefits-list-item {
+        width: fit-content;
+    }
+
+    .benefits-list-item-headline {
+        font-weight: 700;
+        font-size: 36px;
+        text-align: center;
+    }
+
+    .benefits-list-item-icon {
+        display: none;
+    }
+
+    .team-list {
+        flex-direction: column;
+    }
+
+    .portfolio-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .portfolio-list-item {
+        max-width: 288px;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        gap: 72px;
+        align-items: center;
+    }
+
+    .footer-form {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-text {
+        margin-right: 0;
+        text-align: center;
+    }
+
+    .social-media-container {
+        margin-right: 0;
+    }
+
+    .social-media-container-text {
+        text-align: center;
+    }
+
+    .modal {
+        max-width: 288px;
+        padding: 72px 16px 24px 16px;
+    }
+
+    .contact-form-textarea {
+        width: 240px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .container {
+        max-width: 768px;
+    }
+
+    .header-close-btn {
+        display: none;
+    }
+
+    .header-nav {
+        padding: 0;
+    }
+
+    .header-nav-list {
+        display: flex;
+        margin-right: 121px;
+    }
+
+    .header-address {
+        display: flex;
+    }
+    .header-address-list {
+        flex-direction: column;
+        align-items: baseline;
+    }
+    .headline {
+        max-width: 768px;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        margin: 0 auto;
+        padding: 112px 0;
+        background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/bg-tab@1x.jpg);
+    }
+
+    .bebefits,.team, .portfolio {
+        padding: 96px 0;
+    }
+
+    .benefits-list {
+        flex-direction: row;
+        flex-wrap: wrap;
+        column-gap: 24px;
+    }
+
+    .benefits-list-item {
+        width: calc((100% - 24px) / 2);
+    }
+
+    .team-list {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 64px 24px;
+        padding: 0 92px;
+    }
+
+    .portfolio-list {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 72px 24px;
+    }
+    
+    .portfolio-list-item {
+        max-width: 356px;
+    }
+
+    .footer-container {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .footer-text, .social-media-container-text {
+        text-align: left;
+    }
+    .footer-form {
+        flex-direction: row;
+    }
+}
+
+
+@media screen and (min-width: 1158px) {
+    .container {
+        max-width: 1158px;
+    }
+
+    .header-container {
+        justify-content: center;
+    }
+
+    .header-address-list {
+        flex-direction: row;
+    }
+
+    .headline {
+        max-width: 1440px;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        margin: 0 auto;
+        padding: 112px 0;
+        background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/bg-desk@1x.jpg);
+    }
+
+    .benefits-list {
+        flex-direction: row;
+        flex-wrap: nowrap;
+        gap: 24px;
+    }
+
+    .benefits-list-item-headline {
+        font-size: 20px;
+    }
+
+    .benefits-list-item-icon {
+        display: block;
+    }
+
+    .team-list {
+        flex-wrap: nowrap;
+        padding: 0;
+    }
+}
+
+/* MODAL WINDOW */
 .modal-overlay {
     background-color:rgba(46, 47, 66, 0.4);
     position: fixed;
