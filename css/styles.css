@@ -610,14 +610,15 @@ section {
         background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/bg-mob@1x.jpg);
     }
 
-    .headline-button {
-        margin-top: 72px;
-    }
-
     .headline-title {
         font-size: 36px;
         max-width: 216px;
     }
+
+    .headline-button {
+        margin-top: 72px;
+    }
+
     .benefits-list {
         flex-direction: column;
         gap: 72px;
@@ -719,6 +720,10 @@ section {
         background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/bg-tab@1x.jpg);
     }
 
+    .headline-title {
+        max-width: 496px;
+        font-size: 56px;
+    }
     .bebefits,.team, .portfolio {
         padding: 96px 0;
     }
