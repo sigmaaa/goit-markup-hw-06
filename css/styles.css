@@ -680,7 +680,7 @@ section {
     }
 
     .contact-form-textarea {
-        width: 240px;
+        max-width: 240px;
     }
 }
 
@@ -761,6 +761,15 @@ section {
     }
     .footer-form {
         flex-direction: row;
+    }
+
+    .modal {
+        max-width: 408px;
+        padding: 72px 24px 24px 24px;
+    }
+
+    .contact-form-textarea {
+        max-width: 360px;
     }
 }
 
