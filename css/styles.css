@@ -804,6 +804,9 @@ section {
     .header-address-list {
         flex-direction: row;
     }
+    .header-address-link {
+        font-size: 16px;
+    }
 
     .headline {
         max-width: 1440px;
@@ -836,6 +839,10 @@ section {
     .team-list {
         flex-wrap: nowrap;
         padding: 0;
+    }
+
+    .footer-container {
+        min-width: 1158px;
     }
 }
 
